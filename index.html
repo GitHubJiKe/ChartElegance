@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartElegance</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="control-panel">
+            <h2>Chart Controls</h2>
+            <div class="chart-type-selector">
+                <button class="chart-btn active" data-type="line">Line</button>
+                <button class="chart-btn" data-type="bar">Bar</button>
+                <button class="chart-btn" data-type="pie">Pie</button>
+                <button class="chart-btn" data-type="scatter">Scatter</button>
+            </div>
+            <div class="theme-selector">
+                <h3>Theme</h3>
+                <select id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="ocean">Ocean</option>
+                    <option value="forest">Forest</option>
+                </select>
+            </div>
+            <div class="animation-controls">
+                <h3>Animations</h3>
+                <label><input type="checkbox" id="entry-anim" checked> Entry</label>
+                <label><input type="checkbox" id="update-anim" checked> Updates</label>
+                <label><input type="checkbox" id="hover-anim" checked> Hover</label>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="main-chart"></canvas>
+        </div>
+    </div>
+    <script src="./chart.js"></script>
+</body>
+</html>
